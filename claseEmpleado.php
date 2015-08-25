@@ -12,5 +12,10 @@ class Empleado extends Persona
 		$this->legajo=$legajo;
 		$this->sueldoBruto=$sueldoBruto;
 	}
+
+	public function ToString(){
+		//echo "Nombre: ".$this->nombreyapellido."<br>";
+		//parent::ToString();
+	}
 }
 ?>
