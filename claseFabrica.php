@@ -2,6 +2,7 @@
 /**
 * razonSocial
 *empleados[]
+*tostring
 */
 class Fabrica
 {

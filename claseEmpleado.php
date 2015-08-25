@@ -6,9 +6,14 @@ class Empleado extends Persona
 	public $sueldoBruto;
 	public $sueldoNeto;
 	
-	function __construct($persona,$legajo,$sueldoBruto,$sueldoNeto)
+	function __construct($legajo,$sueldoBruto,$nombreyapellido,$edad)
 	{
-		# code...
+		parent::__construct($nombreyapellido,$edad){
+			$this->nombreyapellido=$nombreyapellido;
+			$this->edad=$edad;
+		}
+		$this->legajo=$legajo;
+		$this->sueldoBruto=$sueldoBruto;
 	}
 }
 ?>
