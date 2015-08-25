@@ -8,10 +8,7 @@ class Empleado extends Persona
 	
 	function __construct($legajo,$sueldoBruto,$nombreyapellido,$edad)
 	{
-		parent::__construct($nombreyapellido,$edad){
-			$this->nombreyapellido=$nombreyapellido;
-			$this->edad=$edad;
-		}
+		parent::__construct($nombreyapellido,$edad);
 		$this->legajo=$legajo;
 		$this->sueldoBruto=$sueldoBruto;
 	}
