@@ -1,11 +1,9 @@
 <?php
-/**
-* 
-*/
-class Persona
+abstract class Persona
 {
-	public $nombreyapellido;
-	public $edad;
+	protected $nombreyapellido;
+	protected $edad;
+	protected $idioma;
 	
 	function __construct($nombreyapellido,$edad)
 	{
@@ -13,9 +11,7 @@ class Persona
 		$this->edad=$edad;
 	}
 
-	public function ToString(){
-		echo "Nombre: ".$this->nombreyapellido." <br>";
-		echo "Edad: ".$this->edad;
-	}
-}
+	abstract protected function hablar($idioma);
+
+	abstract protected public function ToString();
 ?>
